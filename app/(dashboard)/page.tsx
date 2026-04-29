@@ -1,5 +1,5 @@
-import { StatsCards } from "@/components/(dashboard)/stats-cards";
-import { ProjectsTable } from "@/components/(dashboard)/projects-table";
+import { StatsCards } from "@/components/dashboard/stats-cards";
+import { ProjectsTable } from "@/components/dashboard/projects-table";
 
 const mockProyectos = [
   {
