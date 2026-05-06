@@ -21,6 +21,7 @@ export function Sidebar() {
       <div className="h-16 flex items-center px-6 border-b">
         <span className="text-xl font-bold text-slate-900 tracking-tight">
           WeBoost<span className="text-blue-600">Nic</span>
+          <img src="/logo.png" alt="Logo" className="h-8 w-8" />
         </span>
       </div>
 
