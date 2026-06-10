@@ -8,12 +8,11 @@ import {
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
 
-// Definimos la interfaz para los datos (puedes mover esto a un archivo de tipos después)
 interface Proyecto {
   id_proyecto: string;
   nombre: string;
   cliente: string;
-  estado: "activo" | "finalizado" | "en_pausa";
+  estado: string;
   progreso: number;
 }
 
@@ -36,7 +35,7 @@ export function ProjectsTable({ proyectos }: { proyectos: Proyecto[] }) {
               <TableCell>{proy.cliente}</TableCell>
               <TableCell>
                 <Badge
-                  variant={proy.estado === "activo" ? "default" : "secondary"}
+                  variant={proy.estado === "Activo" ? "default" : "secondary"}
                 >
                   {proy.estado}
                 </Badge>

@@ -1,7 +1,2 @@
-import { createClient } from "@supabase/supabase-js";
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!;
-
-// Cliente global para Server Components
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+// Cliente Server Component con manejo de cookies de autenticación
+export { createClient } from "./supabase-server";
